@@ -15,13 +15,14 @@ $(document).ready(function() {
         e.preventDefault();
 
         $.colorbox(
-            { 
+            {
                 height: $(this).data("colorbox-height") || false,
                 width: $(this).data("colorbox-width") || false,
                 iframe: $(this).data("colorbox-iframe") || false,
                 photo: $(this).data("colorbox-photo") || false,
                 innerHeight: $(this).data("colorbox-innerheight") || false,
                 innerWidth: $(this).data("colorbox-innerwidth") || false,
+                title: $(this).data("colorbox-title") || false,
                 href: $(this).attr('href'),
                 opacity: 0.5
             });
